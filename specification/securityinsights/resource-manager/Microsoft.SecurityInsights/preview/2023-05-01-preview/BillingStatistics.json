@@ -123,6 +123,22 @@
     }
   },
   "definitions": {
+    "BillingStatisticList": {
+      "description": "List all the billing statistics for the workspace.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Array of billing statistics.",
+          "items": {
+            "$ref": "#/definitions/BillingStatistic"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
     "BillingStatistic": {
       "allOf": [
         {
@@ -187,22 +203,6 @@
         "activeSystemIdCount"
       ],
       "type": "object"
-    },
-    "BillingStatisticList": {
-      "description": "List all the billing statistics for the workspace.",
-      "type": "object",
-      "properties": {
-        "value": {
-          "description": "Array of billing statistics.",
-          "items": {
-            "$ref": "#/definitions/BillingStatistic"
-          },
-          "type": "array"
-        }
-      },
-      "required": [
-        "value"
-      ]
     }
   },
   "parameters": {
