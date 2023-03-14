@@ -172,7 +172,8 @@
           "x-ms-client-flatten": true
         }
       },
-      "type": "object"
+      "type": "object",
+      "x-ms-discriminator-value": "SapUsage"
     },
     "SapUsageStatisticProperties": {
       "description": "The SAP solution usage properties",
