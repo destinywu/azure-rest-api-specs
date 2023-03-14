@@ -30,6 +30,14 @@ tag: package-preview-2023-02
 ```
 ---
 
+### Tag: package-preview-2023-05
+
+These settings apply only when `--tag=package-preview-2023-05` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2023-05'
+input-file:
+  - Microsoft.SecurityInsights/preview/2023-05-01-preview/BillingStatistics.json
+```
 ### Tag: package-2023-02
 
 These settings apply only when `--tag=package-2023-02` is specified on the command line.
